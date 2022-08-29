@@ -29,9 +29,10 @@
             @Html.DisplayFor(modelItem => item.CatalogName)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+            @Html.ActionLink("Chỉnh sửa", "Edit", new { id = item.Id }) |
+            @Html.ActionLink("Xem chi tiết", "Details", new { id = item.Id }) |
+            @Html.ActionLink("Xóa", "Delete", new { id = item.Id }) |
+            @Html.ActionLink("Xem Sản Phẩm", "SanPhams", new { cataLogId = item.Id })
         </td>
     </tr>
 }

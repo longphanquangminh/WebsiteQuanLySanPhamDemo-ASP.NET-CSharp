@@ -1,17 +1,10 @@
 ﻿@model IEnumerable<WebsiteQuanLySanPham.Models.Product>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "SanPhams";
 }
 
-<h2>Index</h2>
-<form method="get">
-    <p>
-        Đơn giá Min:<input id="Text1" name="txtMin" type="text" />
-        Đơn giá Max:<input id="Text1" name="txtMax" type="text" />
-        <input id="Submit1" type="submit" value="submit" />
-    </p>
-</form>
+<h2>SanPhams</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -58,9 +51,9 @@
             @Html.DisplayFor(modelItem => item.UnitPrice)
         </td>
         <td>
-            @Html.ActionLink("Chỉnh sửa", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Xem chi tiết", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Xóa", "Delete", new { id=item.Id })
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
         </td>
     </tr>
 }
