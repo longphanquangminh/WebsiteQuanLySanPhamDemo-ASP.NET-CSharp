@@ -69,5 +69,17 @@ namespace WebsiteQuanLySanPham.Controllers
             context.SubmitChanges();
             return RedirectToAction("Index");
         }
+
+        public ActionResult Delete(int id)
+        {
+            QuanLySanPhamDataContext context = new QuanLySanPhamDataContext();
+            Catalog catalog = context.Catalogs.FirstOrDefault(x => x.Id == id);
+            if (catalog != null)
+            {
+                context.Catalogs.DeleteOnSubmit(catalog);
+                context.SubmitChanges();
+            }
+            return RedirectToAction("Index");
+        }
     }
 }
