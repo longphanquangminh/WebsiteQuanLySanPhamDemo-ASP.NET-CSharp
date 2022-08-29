@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 13.5, 8.5" name="QuanLySanPham">
+  <DataContextMoniker Name="/QuanLySanPhamDataContext" />
+  <nestedChildShapes>
+    <classShape Id="87a032ba-12ac-4f6f-b812-ed1ff9fc30c7" absoluteBounds="7.75, 1.25, 2, 1.3862939453125">
+      <DataClassMoniker Name="/QuanLySanPhamDataContext/Catalog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bd96eb1b-8648-4c99-868d-717ff769e3b9" absoluteBounds="7.765, 1.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="709187c0-92f7-4b2a-8e9a-85f106c9f012" absoluteBounds="11.25, 3.375, 2, 1.9631982421875">
+      <DataClassMoniker Name="/QuanLySanPhamDataContext/Product" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fbb079b7-a0d6-4f6a-a148-27d730431170" absoluteBounds="11.265, 3.835, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.75 : 2.6362939453125); (8.75 : 4.35659912109375); (11.25 : 4.35659912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QuanLySanPhamDataContext/Catalog/Catalog_Product" />
+      <nodes>
+        <classShapeMoniker Id="87a032ba-12ac-4f6f-b812-ed1ff9fc30c7" />
+        <classShapeMoniker Id="709187c0-92f7-4b2a-8e9a-85f106c9f012" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
